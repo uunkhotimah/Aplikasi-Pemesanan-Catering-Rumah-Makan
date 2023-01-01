@@ -11,6 +11,7 @@ public class Main {
         int pilih, jmlhpaket, total, uang;
         int kembalian;
         String nama_pelanggan;
+        String alamat;
         System.out.println();
         System.out.println("     ~Selamat Datang di Rumah Makan Mitra~");
         System.out.println("==============================================");
@@ -18,8 +19,10 @@ public class Main {
         System.out.println("            SEHAT, LEZAT DAN HEMAT");
         System.out.println("==============================================");
         System.out.println();
-        System.out.print("Masukkan Nama Anda : ");
+        System.out.print("Masukkan Nama\t\t\t: ");
         nama_pelanggan=in.nextLine();
+        System.out.print("Masukkan Alamat\t\t\t: ");
+        alamat=in.nextLine();
         System.out.println("Hallo " +nama_pelanggan+ "...");
         System.out.println("-----------------------------------------------------------------------------------------------------------------");
         System.out.println("Silakan pilih paket menu yang ada di bawah ini :");
@@ -55,19 +58,28 @@ public class Main {
                     System.out.println("Total Biaya\t: "+total);
                     System.out.print("Total Uang\t: ");
                     uang = in.nextInt();
-                    if(uang>=total){
+                    if(uang>total){
                         kembalian = uang - total;
                         System.out.println("Kembalian Anda Rp. " +kembalian);
                         System.out.println("Terima Kasih");
                         System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
                         try {
-
                             Pemilihan = in2.readLine();
                         }catch (IOException e){
                             System.out.println("Anda salah pilih");
                         }
                         System.out.println();
-                    }else {
+                    } else if (uang>=total) {
+                        System.out.println("Pesanan Berhasil!!!");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
+                        try {
+                            Pemilihan = in2.readLine();
+                        }catch (IOException e){
+                            System.out.println("Anda salah pilih");
+                        }
+                        System.out.println();
+                    } else {
                         System.out.println("Mohon maaf uang Anda tidak cukup!");
                         System.out.println("Silakan lakukan pemesanan kembali..");
                         System.out.println();
@@ -83,17 +95,28 @@ public class Main {
                     System.out.println("Total Biaya\t: "+total);
                     System.out.print("Total Uang\t: ");
                     uang = in.nextInt();
-                    if(uang>=total){
+                    if(uang>total){
                         kembalian = uang - total;
                         System.out.println("Kembalian Anda Rp. "+kembalian);
-                        System.out.print("Apakah Anda ingin memesan kembali? (Y/N)");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin memesan kembali? (Y/N) ");
                         try {
                             Pemilihan = in2.readLine();
                         }catch (IOException e){
                             System.out.println("Anda salah pilih");
                         }
                         System.out.println();
-                    }else {
+                    }else if (uang>=total) {
+                        System.out.println("Pesanan Berhasil!!!");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
+                        try {
+                            Pemilihan = in2.readLine();
+                        }catch (IOException e){
+                            System.out.println("Anda salah pilih");
+                        }
+                        System.out.println();
+                    } else {
                         System.out.println("Mohon maaf uang Anda tidak cukup!");
                         System.out.println("Silakan lakukan pemesanan kembali..");
                         System.out.println();
@@ -109,17 +132,28 @@ public class Main {
                     System.out.println("Total Biaya\t: "+total);
                     System.out.print("Total Uang\t: ");
                     uang = in.nextInt();
-                    if(uang>=total){
+                    if(uang>total){
                         kembalian = uang - total;
                         System.out.println("Kembalian Anda Rp. "+kembalian);
-                        System.out.print("Apakah Anda ingin memesan kembali? (Y/N)");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin memesan kembali? (Y/N) ");
                         try {
                             Pemilihan = in2.readLine();
                         }catch (IOException e){
                             System.out.println("Anda salah pilih");
                         }
                         System.out.println();
-                    }else {
+                    } else if (uang>=total) {
+                        System.out.println("Pesanan Berhasil!!!");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
+                        try {
+                            Pemilihan = in2.readLine();
+                        }catch (IOException e){
+                            System.out.println("Anda salah pilih");
+                        }
+                        System.out.println();
+                    } else {
                         System.out.println("Mohon maaf uang Anda tidak cukup!");
                         System.out.println("Silakan lakukan pemesanan kembali..");
                         System.out.println();
@@ -135,17 +169,28 @@ public class Main {
                     System.out.println("Total Biaya\t: "+total);
                     System.out.print("Total Uang\t: ");
                     uang = in.nextInt();
-                    if(uang>=total){
+                    if(uang>total){
                         kembalian = uang - total;
                         System.out.println("Kembalian Anda " +kembalian);
-                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N)");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
                         try {
                             Pemilihan = in2.readLine();
                         }catch (IOException e){
                             System.out.println("Anda salah pilih");
                         }
                         System.out.println();
-                    }else {
+                    } else if (uang>=total) {
+                        System.out.println("Pesanan Berhasil!!!");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
+                        try {
+                            Pemilihan = in2.readLine();
+                        }catch (IOException e){
+                            System.out.println("Anda salah pilih");
+                        }
+                        System.out.println();
+                    } else {
                         System.out.println("Mohon maaf uang Anda tidak cukup!");
                         System.out.println("Silakan lakukan pemesanan kembali..");
                         System.out.println();
@@ -161,17 +206,28 @@ public class Main {
                     System.out.println("Total biaya\t: "+total);
                     System.out.print("Total Uang\t: ");
                     uang = in.nextInt();
-                    if(uang>=total){
+                    if(uang>total){
                         kembalian = uang - total;
                         System.out.println("Kembalian Anda " +kembalian);
-                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N)");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
                         try {
                             Pemilihan = in2.readLine();
                         }catch (IOException e){
                             System.out.println("Anda salah pilih");
                         }
                         System.out.println();
-                    }else {
+                    } else if (uang>=total) {
+                        System.out.println("Pesanan Berhasil!!!");
+                        System.out.println("Terima Kasih");
+                        System.out.print("Apakah Anda ingin menambah pesanan? (Y/N) ");
+                        try {
+                            Pemilihan = in2.readLine();
+                        }catch (IOException e){
+                            System.out.println("Anda salah pilih");
+                        }
+                        System.out.println();
+                    } else {
                         System.out.println("Mohon maaf uang Anda tidak cukup!");
                         System.out.println("Silakan lakukan pemesanan kembali..");
                         System.out.println();
